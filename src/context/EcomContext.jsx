@@ -110,7 +110,7 @@ export const EcomProvider = ({ children }) => {
             setLoading(false)
           });
           setOrder(ordersArray);
-          // console.log(ordersArray)
+          console.log(ordersArray)
           setLoading(false);
         } catch (error) {
           console.log(error)
@@ -184,6 +184,7 @@ export const EcomProvider = ({ children }) => {
           setLoading(false)
         }
       }
+    
   const [searchkey, setSearchkey] = useState('')
   const [filterType, setFilterType] = useState('')
   const [filterPrice, setFilterPrice] = useState('')

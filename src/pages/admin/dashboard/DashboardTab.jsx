@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 // disable eslint
 function DashboardTab() {
     const context = useEcom()
-    const { mode , product ,deleteProduct,edithandle,order,user} = context
+    const { mode , product ,deleteProduct,edithandle,order,user,updateOrderStatus} = context
     let [isOpen, setIsOpen] = useState(false)
 
     // console.log(product);
@@ -25,6 +25,7 @@ function DashboardTab() {
     const goToAdd = () =>{
         window.location.href = '/addproduct'
     }
+
 
     return (
         <div >
