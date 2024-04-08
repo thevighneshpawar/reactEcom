@@ -38,6 +38,7 @@ function Signup() {
             const userRef = collection(fireDB, "users")
             await addDoc(userRef, user);
             toast.success("Signup Succesfully")
+            window.location.href='/login'
             setName("");
             setEmail("");
             setPassword("");
@@ -65,6 +66,7 @@ function Signup() {
                         className=' bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none'
                         placeholder='Name'
                     />
+                   
                 </div>
 
                 <div>
@@ -93,6 +95,8 @@ function Signup() {
                     </button>
                 </div>
                 <div>
+                   
+                   <p className='text-red-500'>test details on login page</p>
                     <h2 className='text-white'>Have an account <Link className=' text-red-500 font-bold' to={'/login'}>Login</Link></h2>
                 </div>
             </div>
